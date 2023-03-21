@@ -6,10 +6,10 @@ body {
 }
 
 .form {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   border: 0.15rem black solid;
   border-radius: 1.5rem;
   min-width: 25rem;
@@ -49,14 +49,22 @@ input {
   padding: 0.5rem 0.75rem;
 }
 
+input:focus {
+  outline: none;
+}
+
 .errorMsg {
   color: red;
+  opacity: 0;
+  font-size: 0.8rem;
+  max-width: 18rem;
 }
 
 .errorMsg.active {
   padding: 0.5rem 0.5rem;
-  border: 0.1rem solid black;
-  border-radius: 0.25rem;
+  /* border: 0.1rem solid black;
+  border-radius: 0.25rem; */
+  opacity: 1;
 }
 
 .required {
@@ -69,4 +77,18 @@ input {
 
 :invalid {
   border-color: red;
+}
+
+.submit-form {
+  background-color: inherit;
+  align-self: center;
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: 0.15rem solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: green;
+  font-weight: 500;
 }
