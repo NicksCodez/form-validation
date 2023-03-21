@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  border: 0.15rem black solid;
+  border-radius: 1.5rem;
+  min-width: 25rem;
+}
+
+fieldset {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-items: center;
+  border: none;
+  padding: 3rem 0;
+}
+
+legend {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+fieldset > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 1.3rem;
+}
+
+input {
+  box-shadow: none;
+  font-size: inherit;
+  border-radius: 0.5rem;
+  border-style: solid;
+  padding: 0.5rem 0.75rem;
+}
+
+.errorMsg {
+  color: red;
+}
+
+.errorMsg.active {
+  padding: 0.5rem 0.5rem;
+  border: 0.1rem solid black;
+  border-radius: 0.25rem;
+}
+
+.required {
+  color: red;
+}
+
+:valid {
+  border-color: aqua;
+}
+
+:invalid {
+  border-color: red;
+}

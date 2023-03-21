@@ -6,6 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
   </head>
-  <body></body>
+  <body>
+    <div class="form">
+      <form action="" novalidate>
+        <fieldset>
+          <legend>Make Account</legend>
+          <div>
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" />
+            <span class="errorMsg"></span>
+          </div>
+          <div>
+            <label for="country">Country <span class="required">*</span></label>
+            <input type="text" id="country" name="country" />
+            <span class="errorMsg"></span>
+          </div>
+          <div>
+            <label for="zip">Zip Code <span class="required">*</span></label>
+            <input type="text" id="zip" name="zip" />
+            <span class="errorMsg"></span>
+          </div>
+          <div>
+            <label for="password"
+              >Password <span class="required">*</span></label
+            >
+            <input type="password" id="password" name="password" />
+            <span class="errorMsg"></span>
+          </div>
+          <div>
+            <label for="password-confirm"
+              >Confirm Password <span class="required">*</span></label
+            >
+            <input
+              type="password"
+              id="password-confirm"
+              name="password-confirm"
+            />
+          </div>
+          <span class="errorMsg"></span>
+        </fieldset>
+      </form>
+    </div>
+  </body>
   <script src="bundle.js"></script>
 </html>
